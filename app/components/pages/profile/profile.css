@@ -1,0 +1,107 @@
+section.profile {
+    display: flex;
+    align-items: flex-start;
+}
+section.profile .left {
+    margin-right: 40px;
+    flex: 0 0 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.profile .wrap {
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+    border-bottom: 1px solid #E7ECEF;
+    margin-bottom: 55px;
+    line-height: 1.4em;
+}
+section.profile .left h1 {
+    font-weight: 500;
+    margin-top: 18px;
+    font-size: 1.2em;
+}
+section.profile .left h2 {
+    color: #1EAAF1;
+}
+section.profile .left h3 {
+    color: #8E8E8E;
+    font-size: 0.8em;
+}
+section.profile .left img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+section.profile .center {
+    margin-right: 0px;
+    width: 100%;
+}
+section.profile .center .card > h1 {
+    font-size: 1.2em;
+    padding: 25px 30px;
+    font-weight: 600;
+    border-bottom: 1px solid #E7ECEF;
+}
+section.profile .center .card .pad > h2 {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+section.profile .center .card .pad {
+    padding: 30px;
+}
+section.profile .center .card p {
+    color: #8E8E8E;
+    font-size: 0.9em;
+    line-height: 2em;
+    margin-bottom: 30px;
+}
+section.profile.editable .left .button {
+    display: none;
+}
+section.profile .pencil {
+    pointer-events: none;
+}
+section.profile.editable .pencil {
+    pointer-events: initial;
+    background-image: url(../../../../img/pencil.png);
+    padding-left: 30px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 15px;
+    cursor: pointer;
+}
+section.profile.editable span.pencil {
+    margin-left: -30px;
+}
+section.profile .card ul.timeline li p {
+    margin-bottom: 0px;
+    line-height: 1.4em;
+    color: #8E8E8E;
+    max-width: 50%;
+}
+section.profile ul.skills {
+    margin: 20px 0px;
+    padding-left: 10px;
+}
+section.profile ul.skills li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+section.profile ul.skills li .count {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    border: 1px solid #191919;
+}
+section.profile ul.skills li h1 {
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+section.profile .card {
+    margin-bottom: 0px;
+}

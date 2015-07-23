@@ -1,0 +1,56 @@
+body {
+    background: #F4F5F6;
+    font-family: "Roboto";
+    color: #181818;
+}
+* {
+    box-sizing: border-box;
+}
+input:focus, select:focus {
+    outline: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+section.root {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+.content {
+    width: 1230px;
+    margin: 0 auto;
+    padding: 0px 60px;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+section.root section.main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.fade-appear, .fade-enter {
+    -webkit-transform: translate3d(0, 10px, 0);
+            transform: translate3d(0, 10px, 0);
+    opacity: 0;
+    -webkit-transition: 300ms all;
+            transition: 300ms all;
+}
+.fade-appear-active, .fade-enter-active {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+.fade-leave {
+    -webkit-transition: 300ms all;
+            transition: 300ms all;
+}
+.fade-leave-active {
+    -webkit-transform: translate3d(0, 10px, 0);
+            transform: translate3d(0, 10px, 0);
+    opacity: 0;
+}
